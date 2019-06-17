@@ -58,4 +58,16 @@
             android:layout_height="wrap_content"
             android:text="load person info"/>
 
+    <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_add_pet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="add pet"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_remove_pet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="remove pet"/>
+
 </LinearLayout>
