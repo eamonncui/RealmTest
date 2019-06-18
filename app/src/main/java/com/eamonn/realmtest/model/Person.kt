@@ -2,6 +2,7 @@ package com.eamonn.realmtest.model
 
 import io.realm.RealmList
 import io.realm.RealmObject
+import io.realm.annotations.PrimaryKey
 
 /**
  * RealmTest
@@ -9,27 +10,33 @@ import io.realm.RealmObject
  * @author Eamonn.Cui
  * Created by Eamonn.Cui on 2019/06/13.
  */
-open class Person(name: String?, age: Int?) : RealmObject() {
-    var name: String? = name
-    var age: Int? = age
-    var pets: RealmList<Pet> = RealmList()
+open class Person() : RealmObject() {
 
-    constructor () : this(null, null) {
+    @PrimaryKey
+    private var id: String? = null
+
+    var name: String? = null
+    var age: Int? = null
+    var pet: Pet? = null
+    var pets: RealmList<Pet>? = null
+
+    constructor(name: String?, age: Int?) : this() {
+        this.name = name
+        this.age = age
+        id = hashCode().toString()
     }
 
-    fun addPet(pet: Pet):Person {
-        pets.add(pet)
-        return this
+    fun addPet(pet: Pet) {
+        this.pet = pet
+        pets?.add(pet)
     }
 
-    fun removePet(pet: Pet):Person {
-        pets.remove(pet)
-        return this
+    fun removePet() {
+        pets?.remove(pet)
+        pet = null
     }
 
     override fun toString(): String {
-        return "Person(name=$name, age=$age)"
+        return "Person(id=$id, name=$name, age=$age, pet=$pet, pets=$pets)"
     }
-
-
 }

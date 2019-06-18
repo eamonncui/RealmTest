@@ -10,6 +10,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import com.eamonn.realmtest.R
 import com.eamonn.realmtest.datamanager.PersonInfoDataManager
+import com.eamonn.realmtest.inject.component.DaggerMainComponent
 import com.eamonn.realmtest.model.Person
 import com.eamonn.realmtest.model.Pet
 import kotlinx.android.synthetic.main.fragment_init.*
@@ -23,6 +24,11 @@ class InitFragment : Fragment() {
 
     @Inject
     lateinit var dataManager: PersonInfoDataManager
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        DaggerMainComponent.builder().build().inject(this)
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
