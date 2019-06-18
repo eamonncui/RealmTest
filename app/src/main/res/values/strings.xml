@@ -3,4 +3,14 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Navigate -->
+    <string name="navigatefrag_btn_to_init">to_init</string>
+    <string name="navigatefrag_btn_to_json">to_json</string>
+
+    <!-- Json -->
+    <string name="jsonfrag_text_tip">你可以直接将 JSON 对象添加到 Realm 中，这些 JSON 对象可以是一个 String、一个 JSONObject 或者是一个 InputStream。Realm 会忽略 JSON 中存在但未定义在 Realm 模型类里的字段。单独对象可以通过 Realm.createObjectFromJson() 添加。对象列表可以通过 Realm.createAllFromJson() 添加。</string>
+    <string name="jsonfrag_btn_jsonString_to_pet">btn_jsonString_to_pet</string>
+    <string name="jsonfrag_btn_jsonObject_to_pet">btn_jsonObject_to_pet</string>
+    <string name="jsonfrag_btn_jsonInputStream_to_pet">btn_jsonInputStream_to_pet</string>
 </resources>

@@ -13,11 +13,11 @@ import io.realm.annotations.PrimaryKey
 open class Pet() : RealmObject() {
 
     @PrimaryKey
-    @NonNull
     var id: Int? = null
 
+    @NonNull
     var name: String? = null
-    var age: Int? = null
+    private var age: Int? = null
 
     constructor(id:Int? ,name: String?, age: Int?) : this() {
         this.id = id
@@ -26,6 +26,8 @@ open class Pet() : RealmObject() {
     }
 
     override fun toString(): String {
-        return "Pet(name=$name, age=$age)"
+        return "Pet(id=$id, name=$name, age=$age)"
     }
+
+
 }

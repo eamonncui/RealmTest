@@ -2,9 +2,20 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
             android:id="@+id/navigation"
-            app:startDestination="@id/initFragment">
+            app:startDestination="@id/navigateFragment">
 
 
     <fragment android:id="@+id/initFragment" android:name="com.eamonn.realmtest.fragment.InitFragment"
               android:label="fragment_init" tools:layout="@layout/fragment_init"/>
+
+    <fragment android:id="@+id/jsonFragment" android:name="com.eamonn.realmtest.fragment.JsonFragment"
+              android:label="fragment_json" tools:layout="@layout/fragment_json"/>
+
+    <fragment android:id="@+id/navigateFragment" android:name="com.eamonn.realmtest.fragment.NavigateFragment"
+              android:label="fragment_navigate" tools:layout="@layout/fragment_navigate">
+        <action android:id="@+id/action_navigateFragment_to_initFragment" app:destination="@id/initFragment"/>
+        <action android:id="@+id/action_navigateFragment_to_jsonFragment" app:destination="@id/jsonFragment"/>
+    </fragment>
+
+
 </navigation>

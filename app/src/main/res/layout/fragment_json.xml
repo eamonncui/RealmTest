@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="15dp"
+              tools:context=".fragment.JsonFragment">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jsonfrag_text_tip"/>
+
+    <TextView android:id="@+id/jsonfrag_tv_petinfo"
+              android:layout_width="wrap_content"
+              android:layout_marginTop="30dp"
+              android:layout_height="wrap_content"/>
+
+    <Button android:id="@+id/jsonfrag_btn_jsonString_to_pet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jsonfrag_btn_jsonString_to_pet"/>
+
+    <Button android:id="@+id/jsonfrag_btn_jsonObject_to_pet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jsonfrag_btn_jsonObject_to_pet"/>
+
+    <Button android:id="@+id/jsonfrag_btn_jsonInputStream_to_pet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jsonfrag_btn_jsonInputStream_to_pet"/>
+
+</LinearLayout>
