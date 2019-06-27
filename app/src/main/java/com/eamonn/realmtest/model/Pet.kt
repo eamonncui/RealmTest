@@ -1,6 +1,5 @@
 package com.eamonn.realmtest.model
 
-import androidx.annotation.NonNull
 import io.realm.RealmObject
 import io.realm.annotations.PrimaryKey
 
@@ -15,7 +14,6 @@ open class Pet() : RealmObject() {
     @PrimaryKey
     var id: Int? = null
 
-    @NonNull
     var name: String? = null
     private var age: Int? = null
 
@@ -28,6 +26,4 @@ open class Pet() : RealmObject() {
     override fun toString(): String {
         return "Pet(id=$id, name=$name, age=$age)"
     }
-
-
 }

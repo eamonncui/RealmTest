@@ -12,7 +12,6 @@ import com.eamonn.realmtest.R
 import com.eamonn.realmtest.datamanager.PersonInfoDataManager
 import com.eamonn.realmtest.inject.component.DaggerMainComponent
 import com.eamonn.realmtest.model.Person
-import com.eamonn.realmtest.model.Pet
 import kotlinx.android.synthetic.main.fragment_init.*
 import javax.inject.Inject
 
@@ -20,7 +19,7 @@ import javax.inject.Inject
  * A simple [Fragment] subclass.
  *
  */
-class InitFragment : Fragment() {
+class RelationsFragment : Fragment() {
 
     @Inject
     lateinit var dataManager: PersonInfoDataManager
@@ -50,12 +49,12 @@ class InitFragment : Fragment() {
             if (!TextUtils.isEmpty(ev_new_name.text) && !TextUtils.isEmpty(ev_new_age.text)) {
                 try {
                     dataManager.updatePersonInfo(ev_new_name.text.toString(), (ev_new_age.text.toString().toInt()))
-                    Toast.makeText(this@InitFragment.context, "update success", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@RelationsFragment.context, "update success", Toast.LENGTH_SHORT).show()
                 } catch (e: Exception) {
-                    Toast.makeText(this@InitFragment.context, "update fail," + e.message, Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@RelationsFragment.context, "update fail," + e.message, Toast.LENGTH_SHORT).show()
                 }
             } else {
-                Toast.makeText(this@InitFragment.context, "some is empty", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@RelationsFragment.context, "some is empty", Toast.LENGTH_SHORT).show()
             }
         }
 

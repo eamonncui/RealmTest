@@ -2,7 +2,6 @@ package com.eamonn.realmtest.fragment
 
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -18,9 +17,8 @@ import org.json.JSONObject
  * A Fragment for Json to RealmObject.
  *
  */
-class JsonFragment : Fragment() {
+class JsonFragment : BaseRealmFragment() {
 
-    private lateinit var realm: Realm
     private lateinit var realmChangeListener: RealmChangeListener<Realm>
     private lateinit var pet: Pet
 

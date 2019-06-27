@@ -1,6 +1,6 @@
 package com.eamonn.realmtest.inject.component
 
-import com.eamonn.realmtest.fragment.InitFragment
+import com.eamonn.realmtest.fragment.RelationsFragment
 import dagger.Component
 import javax.inject.Singleton
 
@@ -13,5 +13,5 @@ import javax.inject.Singleton
 @Singleton
 @Component
 interface MainComponent {
-    fun inject(fragment: InitFragment)
+    fun inject(fragment: RelationsFragment)
 }

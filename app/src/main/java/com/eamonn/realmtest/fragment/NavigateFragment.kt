@@ -31,7 +31,9 @@ class NavigateFragment : Fragment() {
     }
 
     private fun initBtnListener() {
+        navigatefrag_btn_to_init.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_navigateFragment_to_initFragment))
         navigatefrag_btn_to_json.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_navigateFragment_to_jsonFragment))
+        navigatefrag_btn_to_realms.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_navigateFragment_to_realmsFragment))
     }
 
 }

@@ -5,7 +5,7 @@
             app:startDestination="@id/navigateFragment">
 
 
-    <fragment android:id="@+id/initFragment" android:name="com.eamonn.realmtest.fragment.InitFragment"
+    <fragment android:id="@+id/initFragment" android:name="com.eamonn.realmtest.fragment.RelationsFragment"
               android:label="fragment_init" tools:layout="@layout/fragment_init"/>
 
     <fragment android:id="@+id/jsonFragment" android:name="com.eamonn.realmtest.fragment.JsonFragment"
@@ -15,7 +15,11 @@
               android:label="fragment_navigate" tools:layout="@layout/fragment_navigate">
         <action android:id="@+id/action_navigateFragment_to_initFragment" app:destination="@id/initFragment"/>
         <action android:id="@+id/action_navigateFragment_to_jsonFragment" app:destination="@id/jsonFragment"/>
+        <action android:id="@+id/action_navigateFragment_to_realmsFragment" app:destination="@id/realmsFragment"/>
     </fragment>
+
+    <fragment android:id="@+id/realmsFragment" android:name="com.eamonn.realmtest.fragment.RealmsFragment"
+              android:label="fragment_realms" tools:layout="@layout/fragment_realms"/>
 
 
 </navigation>
