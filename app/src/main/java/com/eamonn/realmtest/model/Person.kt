@@ -13,7 +13,7 @@ import io.realm.annotations.PrimaryKey
 open class Person() : RealmObject() {
 
     @PrimaryKey
-    private var id: String? = null
+    var id: String? = null
 
     var name: String? = null
     var age: Int? = null
@@ -37,6 +37,10 @@ open class Person() : RealmObject() {
     }
 
     override fun toString(): String {
-        return "Person(id=$id, name=$name, age=$age, pet=$pet, pets=$pets)"
+        var string = "Person(id=$id, name=$name, age=$age, pet=$pet, pets=$pets)"
+        for (pet1 in this.pets!!) {
+            string += pet1.toString()
+        }
+        return string
     }
 }

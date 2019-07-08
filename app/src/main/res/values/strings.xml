@@ -8,6 +8,7 @@
     <string name="navigatefrag_btn_to_init">to_init</string>
     <string name="navigatefrag_btn_to_json">to_json</string>
     <string name="navigatefrag_btn_to_realms">to_realms</string>
+    <string name="navigatefrag_btn_to_write">to_write</string>
 
     <!-- Json -->
     <string name="jsonfrag_text_tip">你可以直接将 JSON 对象添加到 Realm 中，这些 JSON 对象可以是一个 String、一个 JSONObject 或者是一个
@@ -17,4 +18,10 @@
     <string name="jsonfrag_btn_jsonString_to_pet">btn_jsonString_to_pet</string>
     <string name="jsonfrag_btn_jsonObject_to_pet">btn_jsonObject_to_pet</string>
     <string name="jsonfrag_btn_jsonInputStream_to_pet">btn_jsonInputStream_to_pet</string>
+
+    <!-- Write -->
+    <string name="writefrag_btn_executeTransactionAsync">executeTransactionAsync</string>
+    <string name="writefrag_btn_batchupdates">batchupdates</string>
+    <string name="writefrag_btn_showpersoninfo">showpersoninfo</string>
+    <string name="writefrag_btn_addpets">addpets</string>
 </resources>

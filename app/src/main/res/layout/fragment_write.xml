@@ -4,30 +4,37 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical"
-              tools:context=".fragment.NavigateFragment">
+              tools:context=".fragment.WriteFragment">
 
-    <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/navigatefrag_btn_to_init"
+    <TextView
+            android:id="@+id/tv_info"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/navigatefrag_btn_to_init"/>
+            android:text="@string/hello_blank_fragment"/>
 
     <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/navigatefrag_btn_to_json"
+            android:id="@+id/writefrag_btn_executeTransactionAsync"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/navigatefrag_btn_to_json"/>
+            android:text="@string/writefrag_btn_executeTransactionAsync"/>
 
     <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/navigatefrag_btn_to_realms"
+            android:id="@+id/writefrag_btn_addpets"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/navigatefrag_btn_to_realms"/>
+            android:text="@string/writefrag_btn_addpets"/>
 
     <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/navigatefrag_btn_to_write"
+            android:id="@+id/writefrag_btn_batchupdates"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/navigatefrag_btn_to_write"/>
+            android:text="@string/writefrag_btn_batchupdates"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/writefrag_btn_showpersoninfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/writefrag_btn_showpersoninfo"/>
+
 
 </LinearLayout>
